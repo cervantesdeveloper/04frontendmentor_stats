@@ -89,14 +89,14 @@ a{
     border-top-right-radius: .6rem;
 }
 
-.card-stats__heading h3{
+.card-stats__heading h2{
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 3rem;
 }
 
-.card-stats__heading h3 span{
+.card-stats__heading h2 span{
     color: var(--violet);
 }
 
@@ -124,9 +124,10 @@ a{
     padding: 1.8rem 0;
 }
 
-.card-stats__stat h6{
+.card-stats__stat h3{
     font-size: 1.8rem;
     text-align: center;
+    font-weight: 700;
 }
 
 .card-stats__stat p{
@@ -138,18 +139,14 @@ a{
 
 @media (min-width: 768px) {
 
-    img{
-        width: auto;
-        height: 100%;
-    }
-
     .card-stats{
         display: flex;
         flex-direction: row-reverse;
         height: 44.6rem;
     }
     .card-stats__hero{
-        width: 54rem;
+        width: 50%;
+        overflow: hidden;
     }
 
     .card-stats__hero img,
@@ -160,21 +157,25 @@ a{
     }
 
     .card-stats__body{
-        width: 57rem;
-        padding: 7.2rem;
+        width: 50%;
+        padding: 7rem 6.6rem 5.5rem;
     }
 
-    .card-stats__heading h3{
+    .card-stats__heading h2{
         text-align: left;
-        font-size: 3rem;
-        line-height: 1.5;
+        font-size: 3.5rem;
+        line-height: 4rem;
         margin-bottom: 2rem;
     }
 
     .card-stats__text{
         text-align: left;
-        letter-spacing: .1rem;
         line-height: 2.5rem;
+        margin-bottom: 5.6rem;
+    }
+    .card-stats__text,
+    .card-stats__stats{
+        width: 35rem;
     }
 
     .card-stats__stats{
@@ -186,10 +187,10 @@ a{
     .card-stats__stat{
         height: 6rem;
         padding: .8rem 0;
-        width: 12.5rem;
     }
 
-    .card-stats__stat h6{
+    .card-stats__stat h3{
+        font-size: 2.4rem;
         text-align: left;
         line-height: 3.4rem;
     }
